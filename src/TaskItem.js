@@ -41,7 +41,7 @@ function TaskItem({ task, onDelete }) {
             <div>
               {task.date}
             </div> 
-            <button 
+            <button
               onClick={handleDelete} disabled={!isChecked} 
               title={!isChecked ? '먼저 체크박스를 체크해야 삭제할 수 있습니다.' : ''}
               style={{ cursor: !isChecked ? 'not-allowed' : 'pointer' }}>
