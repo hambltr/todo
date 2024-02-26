@@ -33,7 +33,7 @@ function TaskItem({ task, onDelete }) {
         <div className='li_wrap'> 
           <div className='li_left'>
             <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange}/> 
-            <div>
+            <div style={{textDecoration: isChecked ? 'line-through' : 'none'}}>
               {task.task}
             </div>
           </div>
@@ -47,7 +47,6 @@ function TaskItem({ task, onDelete }) {
               style={{ cursor: !isChecked ? 'not-allowed' : 'pointer' }}>
               삭제
             </button>
-
           </div>
         </div>
       </>

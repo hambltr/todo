@@ -57,7 +57,7 @@ function App() {
     <div className="App">
       <div className="mode_box">
         <div></div>
-        <p>오늘은 📅</p>
+        <div></div>
         <button className="emoji_btn" onClick={changeEmoji}>{emoji}</button>
       </div>
       <p className="pdate">{new Date().toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
